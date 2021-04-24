@@ -1,0 +1,136 @@
+.promo {
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+  margin-bottom: 56px;
+  background-color: $spring-wood;
+}
+
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-list {
+  display: flex;
+  flex-basis: 50px;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.social-list > li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.social-list__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &--inst {
+    background-image: url("../img/insta-ic.svg");
+  }
+
+  &--fb {
+    background-image: url("../img/fb-ic.svg");
+  }
+
+  &--tw {
+    background-image: url("../img/tw-ic.svg");
+  }
+}
+
+.promo-wrap {
+  display: flex;
+  flex-basis: 1236px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo__text-content {
+  flex-basis: 440px;
+  margin-top: -57px;
+  margin-right: 76px;
+  margin-left: 80px;
+}
+
+.promo__title {
+  @include playfairReg;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  font-size: 30px;
+
+  > span {
+    order: -1;
+    font-size: 45px;
+    line-height: 73px;
+  }
+}
+
+.promo__desc {
+  @include robotoLight;
+
+  margin-bottom: 58px;
+  max-width: 260px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.promo__img-content {
+  position: relative;
+  display: flex;
+  flex-basis: 730px;
+  margin-right: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -193px;
+    right: 500px;
+    top: 0;
+    z-index: -1;
+    width: 523px;
+    height: 768px;
+    background-image: url("../img/elipse_main.svg");
+
+    // background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.promo__img-price {
+  @include prata;
+
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: 140px;
+  margin-right: 43px;
+  margin-left: -60px;
+
+  // padding-right: 20px;
+  font-size: 16px;
+}
+
+.promo__img-desc {
+  @include prata;
+
+  display: inline-flex;
+  align-self: flex-end;
+  margin-bottom: 139px;
+  margin-left: -38px;
+  font-size: 16px;
+}
+
+.promo__img {
+  align-self: center;
+  margin-left: -36px;
+}

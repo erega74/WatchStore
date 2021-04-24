@@ -1,0 +1,133 @@
+.bestsellers__header {
+  display: flex;
+}
+
+.bestsellers__title {
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  transform: translateX(18%);
+}
+
+.see-all {
+  @include robotoMedium;
+
+  align-self: flex-end;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $ash;
+  padding-bottom: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  color: $masala;
+  transition: color 0.4s ease;
+
+  &:hover {
+    color: $olive-haze;
+  }
+}
+
+.bestsellers__catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-list__item {
+  display: flex;
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: $spring-wood;
+  transition: background-color 0.4s ease;
+
+  &:hover {
+    background-color: $spring-wood-hover;
+  }
+
+  &:first-child {
+    max-width: 370px;
+
+    > .catalog-list__item-img-wrap {
+      margin-left: -122px;
+    }
+  }
+}
+
+.catalog-list__item:not(:nth-of-type(2n)) {
+  margin-right: 40px;
+}
+
+.catalog-list__item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-list__item-link {
+  @include playfairReg;
+
+  margin-top: auto;
+  margin-left: 60px;
+  font-size: 16px;
+  text-decoration: none;
+  color: $rangoon-green;
+  transition: color 0.4s ease;
+
+  &:hover {
+    color: $fuscous-gray;
+  }
+
+  &:hover.left-decor::before {
+    width: 2.3rem;
+  }
+}
+
+.small-card {
+  justify-content: space-between;
+}
+
+.small-card:nth-child(n+2) {
+  flex-basis: 565px;
+}
+
+.big-card {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.small-card > .catalog-list__item-img-wrap {
+  align-self: center;
+  background-image: url("../img/bestsellers_small-decor.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.big-card > .catalog-list__item-img-wrap {
+  align-self: center;
+  margin-top: -29px;
+  margin-bottom: -62px;
+  background-image: url("../img/bestsellers_big-decor.svg");
+  background-position: 96% -31px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.catalog-list__item-title {
+  @include playfairBold;
+
+  margin-top: 2px;
+  margin-bottom: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgba($rangoon-green, 0.82);
+}
+
+.catalog-list__item-price {
+  @include prata;
+
+  margin-top: 12px;
+  font-size: 16px;
+  color: rgba($rangoon-green, 0.82);
+}

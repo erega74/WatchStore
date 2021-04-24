@@ -1,0 +1,16 @@
+.button {
+  @include robotoMedium;
+
+  display: inline-block;
+  padding: 26px 42px;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $masala;
+  transition: box-shadow 0.4s ease;
+
+  &:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+}

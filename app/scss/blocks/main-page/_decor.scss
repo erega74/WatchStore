@@ -1,0 +1,30 @@
+.left-decor {
+  position: relative;
+  display: inline-block;
+}
+
+.right-decor {
+  position: relative;
+  display: inline-block;
+}
+
+.left-decor::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 38%;
+  width: 2.8rem;
+  height: 1px;
+  background-color: $olive-haze;
+  transition: width 0.4s ease;
+}
+
+.right-decor::after {
+  content: "";
+  position: absolute;
+  right: -66px;
+  top: 38%;
+  width: 2.8rem;
+  height: 1px;
+  background-color: $olive-haze;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="big-container">
+      <nav class="main-header__nav">
+        <div class="header-left">
+          <button class="burger-btn">
+            <span class="burger-btn__line burger-btn__line-1"></span>
+            <span class="burger-btn__line burger-btn__line-2"></span>
+            <span class="burger-btn__line burger-btn__line-3"></span>
+          </button>
+          <a class="header__logo"><img src="img/logo.svg" width="97" height="19" alt="Логотип магазина швейцарских часов Conquest"></a>
+        </div>
+        <div class="header-right">
+          <button class="header-right__item header-search-button">
+            <img src="img/search-ic.svg" width="16" height="16" alt="Кнопка поиска">
+          </button>
+          <a href="#" class="header-right__item header-ic header-ic--favorites">
+            <span class="visually-hidden">Избранное</span>
+            <span class="header-ic__counter favourites-counter">1</span>
+          </a>
+          <a href="#" class="header-right__item header-ic header-ic--cart">
+            <span class="visually-hidden">Корзина</span>
+            <span class="header-ic__counter cart-counter">2</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-page">
+    <section class="promo">
+      <div class="big-container">
+        <div class="promo-container">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-list__link social-list__link--inst">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-list__link social-list__link--fb">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-list__link social-list__link--tw">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+          <div class="promo-wrap">
+            <div class="promo__text-content">
+              <h2 class="left-decor promo__title">Коллекция <span>Весна/Лето 2021</span></h2>
+              <p class="promo__desc">Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
+              <a href="#" class="promo__link button">смотреть каталог</a>
+            </div>
+            <div class="promo__img-content">
+              <p class="right-decor promo__img-price">22 000 &#8381;</p>
+              <img src="img/watch_main.png" width="506" height="768" alt="" class="promo__img">
+              <p class="left-decor promo__img-desc">28 мм диаметр</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bestsellers">
+      <div class="small-container">
+        <header class="bestsellers__header">
+          <h2 class="bestsellers__title block-title">Популярные модели</h2>
+          <a href="#" class="see-all">Смотреть все</a>
+        </header>
+        <ul class="bestsellers__catalog catalog-list">
+          <li class="catalog-list__item small-card">
+            <div class="catalog-list__item-text">
+              <h3 class="catalog-list__item-title">rado</h3>
+              <p class="catalog-list__item-price">65 300 &#8381;</p>
+              <a href="#" class="left-decor catalog-list__item-link">Подробнее</a>
+            </div>
+            <div class="catalog-list__item-img-wrap">
+              <img src="img/main_watch_1.png" width="309" height="318" class="catalog-list__item-image" alt="Rado">
+            </div>
+          </li>
+          <li class="catalog-list__item big-card">
+            <div class="catalog-list__item-text">
+              <h3 class="catalog-list__item-title">rado</h3>
+              <p class="catalog-list__item-price">65 300 &#8381;</p>
+              <a href="#" class="left-decor catalog-list__item-link">Подробнее</a>
+            </div>
+            <div class="catalog-list__item-img-wrap">
+              <img src="img/main_big_watch_2.png" width="490" height="492" class="catalog-list__item-image" alt="Rado">
+            </div>
+          </li>
+          <li class="catalog-list__item small-card test-card">
+            <div class="catalog-list__item-text">
+              <h3 class="catalog-list__item-title">bvlgari</h3>
+              <p class="catalog-list__item-price">81 700 &#8381;</p>
+              <a href="#" class="left-decor catalog-list__item-link">Подробнее</a>
+            </div>
+            <div class="catalog-list__item-img-wrap">
+              <img src="img/main_watch_3.png" width="246" height="246" class="catalog-list__item-image" alt="Rado">
+            </div>
+          </li>
+          <li class="catalog-list__item small-card test-card">
+            <div class="catalog-list__item-text">
+              <h3 class="catalog-list__item-title">bvlgari</h3>
+              <p class="catalog-list__item-price">72 700 &#8381;</p>
+              <a href="#" class="left-decor catalog-list__item-link">Подробнее</a>
+            </div>
+            <div class="catalog-list__item-img-wrap">
+              <img src="img/main_watch_4.png" width="246" height="246" class="catalog-list__item-image" alt="Rado">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>

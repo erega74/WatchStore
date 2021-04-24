@@ -1,0 +1,48 @@
+@mixin playfairReg {
+  font-family: "PlayfairDisplay_Regular", serif;
+  font-weight: 400;
+}
+
+// @include playfairReg;
+
+@mixin playfairBold {
+  font-family: "PlayfairDisplay_Bold", serif;
+  font-weight: 700;
+}
+
+// @include playfairBold;
+
+@mixin prata {
+  font-family: "Prata_Regular", serif;
+  font-weight: 400;
+}
+
+// @include prata;
+
+@mixin robotoLight {
+  font-family: "Roboto_Light", sans-serif;
+  font-weight: 300;
+}
+
+// @include robotoLight;
+
+@mixin robotoReg {
+  font-family: "Roboto_Regular", sans-serif;
+  font-weight: 400;
+}
+
+// @include robotoReg;
+
+@mixin robotoMedium {
+  font-family: "Roboto_Medium", sans-serif;
+  font-weight: 500;
+}
+
+// @include robotoMedium;
+
+@mixin robotoBold {
+  font-family: "Roboto_Bold", sans-serif;
+  font-weight: 700;
+}
+
+// @include robotoBold;
