@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
@@ -123,18 +124,26 @@
     </section>
     <section class="banner">
       <div class="small-container banner__wrap">
-        <div class="banner__slider main-slider">
-           <ul class="main-slider__list">
-            <li class="main-slider__slide">
-              <img src="" alt="">
+        <div class="swiper-container banner__slider main-slider">
+           <ul class="swiper-wrapper main-slider__list">
+            <li class="swiper-slide main-slider__slide">
+              <img src="img/photo_banner.png" width="521" height="414" alt="Швейцарские часы">
+            </li>
+            <li class="swiper-slide main-slider__slide">
+              <img src="img/photo_banner.png" width="521" height="414" alt="Швейцарские часы">
+            </li>
+            <li class="swiper-slide main-slider__slide">
+              <img src="img/photo_banner.png" width="521" height="414" alt="Швейцарские часы">
             </li>
            </ul>
-           <div class="main-slider__pagination">
-
+           <div class="main-slider__nav-buttons">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
            </div>
         </div>
         <div class="banner__text-content">
-          <h2 class="banner__title">Подлинное качество</h2>
+          <h2 class="block-title banner__title">Подлинное качество</h2>
           <p class="banner__desc">
             Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.
           </p>
@@ -142,8 +151,13 @@
         </div>
       </div>
     </section>
+    <div class="fddg">sdsgg</div>
+    <div class="fddg">sdsgg</div>
+    <div class="fddg">sdsgg</div>
+    <div class="fddg">sdsgg</div>
   </main>
 
+  <script src="js/swiper.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 </html>

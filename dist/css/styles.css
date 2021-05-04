@@ -999,3 +999,114 @@ template {
   font-size: 16px;
   color: rgba(27, 26, 23, 0.82);
 }
+
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 40%;
+  height: 550px;
+  background-color: #f7f5ef;
+}
+
+.banner__wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner__wrap::after {
+  content: "";
+  position: absolute;
+  right: -70%;
+  top: -46%;
+  z-index: -1;
+  width: 1000px;
+  height: 1100px;
+  background-image: url("../img/lines-banner.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.main-slider {
+  overflow: hidden;
+  margin-top: 36px;
+  margin-right: 0;
+  max-width: 521px;
+}
+
+.main-slider__list {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+
+.banner__text-content {
+  margin-right: auto;
+  margin-left: 70px;
+  max-width: 380px;
+}
+
+.banner__desc {
+  font-family: "Roboto_Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444240;
+}
+
+.main-slider__nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 84px;
+  margin-bottom: 17px;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-button-disabled {
+  position: static;
+  width: 10px;
+  height: 14px;
+  background-size: 7px 13px;
+}
+
+.swiper-button-prev {
+  margin-right: 10px;
+  background-image: url("../img/slider-arrow_left.svg");
+}
+
+.swiper-button-next {
+  margin-left: 10px;
+  background-image: url("../img/slider-arrow_right.svg");
+}
+
+.swiper-pagination-custom {
+  font-family: "Prata_Regular", serif;
+  font-weight: 400;
+  position: static;
+  width: auto;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(27, 26, 23, 0.82);
+}
