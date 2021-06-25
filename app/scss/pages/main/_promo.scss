@@ -26,24 +26,18 @@
 }
 
 .social-list__link {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  &--inst {
-    background-image: url("../img/insta-ic.svg");
-  }
+.social-list__link-icon {
+  color: $fuscous-gray;
+  transition: all 0.2s linear;
+}
 
-  &--fb {
-    background-image: url("../img/fb-ic.svg");
-  }
-
-  &--tw {
-    background-image: url("../img/tw-ic.svg");
-  }
+.social-list__link-icon:hover {
+  color: $ash;
 }
 
 .promo-wrap {

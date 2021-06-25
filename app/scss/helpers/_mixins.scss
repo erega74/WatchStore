@@ -46,3 +46,43 @@
 }
 
 // @include robotoBold;
+
+@mixin small {
+  @media (max-width: $small) {
+    @content;
+  }
+}
+
+// @include small{};
+
+@mixin medium {
+  @media (max-width: $medium) {
+    @content;
+  }
+}
+
+// @include medium{};
+
+@mixin large {
+  @media (max-width: $large) {
+    @content;
+  }
+}
+
+// @include large{};
+
+@mixin extra-large {
+  @media (max-width: $extra-large) {
+    @content;
+  }
+}
+
+// @include extra-large{};
+
+@mixin xxl {
+  @media (max-width: $xxl) {
+    @content;
+  }
+}
+
+// @include xxl{};

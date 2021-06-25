@@ -8,41 +8,9 @@
   box-sizing: inherit;
 }
 
-@import "normalize";
-@import "fonts";
-@import "mixins.scss";
-@import "vars";
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  clip: rect(0 0 0 0);
-}
-
-.big-container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: $header-width;
-}
-
-.small-container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: $small-container;
-}
-
-@import "blocks/main-page/button";
-@import "blocks/main-page/decor";
-@import "blocks/main-page/block-title";
-
-// блоки
-@import "blocks/main-page/header";
-@import "blocks/main-page/main";
-@import "blocks/main-page/promo";
-@import "blocks/main-page/bestsellers";
-@import "blocks/main-page/banner";
+@import "vendors/module";
+@import "helpers/module";
+@import "tools/module";
+@import "components/module";
+@import "layout/module";
+@import "pages/module";

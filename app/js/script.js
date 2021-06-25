@@ -1,3 +1,14 @@
+svg4everybody();
+
+const burgerBtn = document.querySelector(".burger-btn");
+const navLinks = document.querySelector(".header-site-nav");
+
+burgerBtn.addEventListener("click", function(evt) {
+  evt.preventDefault;
+  burgerBtn.classList.toggle("burger-btn--active");
+  navLinks.classList.toggle("header-site-nav--active");
+})
+
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
   spaceBetween: 20,

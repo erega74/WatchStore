@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
+
 <body>
   <header class="main-header">
     <div class="big-container">
@@ -17,8 +19,23 @@
             <span class="burger-btn__line burger-btn__line-2"></span>
             <span class="burger-btn__line burger-btn__line-3"></span>
           </button>
-          <a class="header__logo"><img src="img/logo.svg" width="97" height="19" alt="Логотип магазина швейцарских часов Conquest"></a>
+          <a class="header__logo"><img src="img/logo.svg" width="97" height="19"
+              alt="Логотип магазина швейцарских часов Conquest"></a>
         </div>
+        <ul class="header-site-nav">
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Акции</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Доставка</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Контакты</a>
+          </li>
+        </ul>
         <div class="header-right">
           <button class="header-right__item header-search-button">
             <img src="img/search-ic.svg" width="16" height="16" alt="Кнопка поиска">
@@ -42,18 +59,27 @@
         <div class="promo-container">
           <ul class="social-list">
             <li>
-              <a href="#" class="social-list__link social-list__link--inst">
+              <a href="#" class="social-list__link">
                 <span class="visually-hidden">Инстаграм</span>
+                <svg class="social-list__link-icon" width="18" height="18">
+                  <use xlink:href="img/sprite-icons.svg#instagram-ic"></use>
+                </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-list__link social-list__link--fb">
+              <a href="#" class="social-list__link">
                 <span class="visually-hidden">Фейсбук</span>
+                <svg class="social-list__link-icon" width="9" height="17">
+                  <use xlink:href="img/sprite-icons.svg#facebook-ic"></use>
+                </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-list__link social-list__link--tw">
+              <a href="#" class="social-list__link">
                 <span class="visually-hidden">Твиттер</span>
+                <svg width="17" height="14">
+                  <use class="social-list__link-icon" xlink:href="img/sprite-icons.svg#twitter-ic"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -125,39 +151,172 @@
     <section class="banner">
       <div class="small-container banner__wrap">
         <div class="swiper-container banner__slider main-slider">
-           <ul class="swiper-wrapper main-slider__list">
+          <ul class="swiper-wrapper main-slider__list">
             <li class="swiper-slide main-slider__slide">
-              <img src="img/photo_banner.png" width="521" height="414" alt="Швейцарские часы">
+              <img src="img/photo_banner_1.png" width="521" height="414" alt="Швейцарские часы">
             </li>
             <li class="swiper-slide main-slider__slide">
-              <img src="img/photo_banner.png" width="521" height="414" alt="Швейцарские часы">
+              <img src="img/photo_banner_2.png" width="521" height="414" alt="Швейцарские часы">
             </li>
             <li class="swiper-slide main-slider__slide">
-              <img src="img/photo_banner.png" width="521" height="414" alt="Швейцарские часы">
+              <img src="img/photo_banner_3.png" width="521" height="414" alt="Швейцарские часы">
             </li>
-           </ul>
-           <div class="main-slider__nav-buttons">
+          </ul>
+          <div class="main-slider__nav-buttons">
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
-           </div>
+          </div>
         </div>
         <div class="banner__text-content">
           <h2 class="block-title banner__title">Подлинное качество</h2>
           <p class="banner__desc">
-            Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.
+            Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет
+            гордости и престижа.
           </p>
           <a href="#" class="button banner__link">смотреть каталог</a>
         </div>
       </div>
     </section>
-    <div class="fddg">sdsgg</div>
-    <div class="fddg">sdsgg</div>
-    <div class="fddg">sdsgg</div>
-    <div class="fddg">sdsgg</div>
+
+    <section class="socials">
+      <div class="small-container">
+        <div class="socials-content-wrap">
+          <div class="socials__text-content">
+            <h2 class="socials__text-content-title block-title">Следите за нашими новостями</h2>
+            <p class="socials__text-content-desc">
+              Подписывайтесь на <span class="socials__text-bold">@conquest_watch</span> в соцсетях и узнавайте о
+              новинках и акциях первыми.
+            </p>
+            <ul class="social-list socials-links-list">
+              <li>
+                <a href="#" class="social-list__link">
+                  <span class="visually-hidden">Инстаграм</span>
+                  <svg class="social-list__link-icon" width="18" height="18">
+                    <use xlink:href="img/sprite-icons.svg#instagram-ic"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-list__link">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg class="social-list__link-icon" width="9" height="17">
+                    <use xlink:href="img/sprite-icons.svg#facebook-ic"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-list__link">
+                  <span class="visually-hidden">Твиттер</span>
+                  <svg width="17" height="14">
+                    <use class="social-list__link-icon" xlink:href="img/sprite-icons.svg#twitter-ic"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="socials__image-list">
+            <div class="small-img">
+              <img src="img/social-photo_1.png" width="242" height="225" alt="" class="img-cover ">
+            </div>
+            <div class="small-img">
+              <img src="img/social-photo_2.png" width="242" height="225" alt="" class="img-cover">
+            </div>
+            <div class="big-img">
+              <img src="img/social-photo_3.png" width="377" height="460" alt="" class="img-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer">
+    <div class="small-container">
+      <dl class="footer-navigation">
+        <div class="footer__column">
+          <dt class="footer__contacts visually-hidden">Контакты</dt>
+          <dd>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <a class="footer__logo">
+                  <img src="img/footer_logo.svg" width="127" height="30"
+                  alt="Логотип магазина швейцарских часов Conquest">
+                </a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="tel:84994504797" class="footer__phone footer__link">8(499)450-47-97</a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="mailto:info@conquest.watch.ru" class="footer__email footer__link">info@conquest.watch.ru</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+        <div class="footer__column">
+          <dt class="footer__column-title">о компании</dt>
+          <dd>
+            <ul class="footer__column-list">
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Наши магазины</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Вакансии</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Сертификаты</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Отзывы</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+        <div class="footer__column">
+          <dt class="footer__column-title">покупателям</dt>
+          <dd>
+            <ul class="footer__column-list">
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Каталог товаров</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Как заказать?</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">FAQ</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Корпоративным клиентам</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+        <div class="footer__column">
+          <dt class="footer__column-title">оплата и доставка</dt>
+          <dd>
+            <ul class="footer__column-list">
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Способы оплаты</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Время доставки</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Гарантии и ремонт</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Возврат и компенсация</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </footer>
+
+  <script src="js/svg4everybody.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
+
 </html>

@@ -20,6 +20,7 @@
 }
 
 .header__logo {
+  z-index: 10;
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -50,6 +51,7 @@
 
 .burger-btn {
   position: relative;
+  z-index: 10;
   border: none;
   width: 20px;
   height: 18px;
@@ -60,19 +62,63 @@
   &:focus {
     outline: 1px dotted #666;
   }
+}
 
-  &:hover {
-    .burger-btn__line-1 {
-      transform: translateY(2px);
-    }
+.burger-btn--active > .burger-btn__line-2 {
+  opacity: 0;
+}
 
-    .burger-btn__line-3 {
-      transform: translateY(16px);
-    }
+.burger-btn--active .burger-btn__line-1 {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.burger-btn--active .burger-btn__line-3 {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.header-site-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 50px 0;
+  background-color: $white;
+  transform: translateY(-1000px);
+  transition: transform 0.3s ease-in;
+}
+
+.header-site-nav--active {
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+.site-nav__item:not(:last-of-type) {
+  margin-right: 65px;
+}
+
+.site-nav__link {
+  @include robotoReg;
+
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $fuscous-gray;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $donkey-brown;
   }
 }
 
 .header-search-button {
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;

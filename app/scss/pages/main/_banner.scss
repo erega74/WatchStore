@@ -54,9 +54,14 @@
 .banner__desc {
   @include robotoReg;
 
+  margin-bottom: 40px;
   font-size: 16px;
   line-height: 24px;
   color: $masala;
+}
+
+.banner__link {
+  background-color: $cameo;
 }
 
 .main-slider__nav-buttons {
