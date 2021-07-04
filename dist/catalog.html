@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог - мужские часы</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body class="catalog-page">
+  <header class="main-header catalog-page-header">
+    <div class="small-container">
+      <nav class="main-header__nav">
+        <div class="header-left">
+          <button class="burger-btn">
+            <span class="burger-btn__line burger-btn__line-1"></span>
+            <span class="burger-btn__line burger-btn__line-2"></span>
+            <span class="burger-btn__line burger-btn__line-3"></span>
+          </button>
+          <a class="header__logo"><img src="img/logo.svg" width="97" height="19"
+              alt="Логотип магазина швейцарских часов Conquest"></a>
+        </div>
+        <ul class="header-site-nav">
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link site-nav__link--active">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Акции</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Доставка</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="header-right">
+          <button class="header-right__item header-search-button">
+            <img src="img/search-ic.svg" width="16" height="16" alt="Кнопка поиска">
+          </button>
+          <a href="#" class="header-right__item header-ic header-ic--favorites">
+            <span class="visually-hidden">Избранное</span>
+            <span class="header-ic__counter favourites-counter">1</span>
+          </a>
+          <a href="#" class="header-right__item header-ic header-ic--cart">
+            <span class="visually-hidden">Корзина</span>
+            <span class="header-ic__counter cart-counter">2</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main-catalog">
+  <div class="small-container">
+    <ul class="catalog-breadcrumbs breadcrumbs">
+      <li class="catalog-breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+      </li>
+      <li class="catalog-breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+      </li>
+      <li class="catalog-breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--current">Мужские часы</a>
+      </li>
+    </ul>
+    <section class="catalog">
+      <header class="catalog__header">
+        <h1 class="catalog__title block-title">Мужские часы</h1>
+        <p class="catalog__sort">Сортировать по:
+          <div class="catalog__select-wrap">
+            <select name="sort-card" class="catalog__select">
+              <option value="">популярности</option>
+              <option value="">возрастающей цене</option>
+              <option value="">убывающей цене</option>
+            </select>
+          </div>
+        </p>
+      </header>
+      <div class="catalog__content">
+        <section class="catalog__filters filters">
+          <h2 class="visually-hidden">Фильтры</h2>
+          <form action="#" class="filters-form" method="GET">
+            <fieldset class="filters-form__inputs">
+              <div class="filters-form__legend-wrap">
+                <legend>
+                  <button class="filters-form__button filters-form__button--active">Стоимость</button>
+                </legend>
+              </div>
+              <div class="filters-form__column  filters-form__column--open">
+                <div class="price-slider__wrap">
+                  <div class="filters-form__price-slider"  id="range-slider"></div>
+                  <label class="visually-hidden" for="min-price">Стоимость от</label>
+                  <input class="visually-hidden" type="number" name="min-price" id="min-price" value="12000">
+
+                  <label class="visually-hidden" for="max-price">Стоимость до</label>
+                  <input class="visually-hidden" type="number" name="max-price" id="max-price" value="90000">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filters-form__inputs">
+              <div class="filters-form__legend-wrap">
+                <legend>
+                  <button class="filters-form__button">Бренд</button>
+                </legend>
+              </div>
+              <div class="filters-form__column">
+                <input type="checkbox" name="brand-watch" id="brand-watch-techne" class="visually-hidden" value="Techne">
+                <label for="brand-watch-techne" class="label-custom-checkbox">Techne</label>
+                <input type="checkbox" name="brand-watch" id="brand-watch-rado" class="visually-hidden" value="Rado">
+                <label for="brand-watch-rado" class="label-custom-checkbox">Rado</label>
+                <input type="checkbox" name="brand-watch" id="brand-watch-bvlgari" class="visually-hidden" value="Bvlgari">
+                <label for="brand-watch-bvlgari" class="label-custom-checkbox">Bvlgari</label>
+                <input type="checkbox" name="brand-watch" id="brand-watch-tissot" class="visually-hidden" value="Tissot">
+                <label for="brand-watch-tissot" class="label-custom-checkbox">Tissot</label>
+                <input type="checkbox" name="brand-watch" id="brand-watch-omega" class="visually-hidden" value="Omega">
+                <label for="brand-watch-omega" class="label-custom-checkbox">Omega</label>
+                <input type="checkbox" name="brand-watch" id="brand-watch-montblanc" class="visually-hidden" value="Montblanc">
+                <label for="brand-watch-montblanc" class="label-custom-checkbox">Montblanc</label>
+              </div>
+            </fieldset>
+            <fieldset class="filters-form__inputs">
+              <div class="filters-form__legend-wrap">
+                <legend>
+                  <button class="filters-form__button">Механизм</button>
+                </legend>
+              </div>
+              <div class="filters-form__column">
+                <input type="checkbox" name="watch-mechanism" id="watch-mechanism-nulla" class="visually-hidden" value="Nulla">
+                <label for="watch-mechanism-nulla" class="label-custom-checkbox">Nulla</label>
+                <input type="checkbox" name="watch-mechanism" id="watch-mechanism-felis" class="visually-hidden" value="Felis">
+                <label for="watch-mechanism-felis" class="label-custom-checkbox">Felis</label>
+                <input type="checkbox" name="watch-mechanism" id="watch-mechanism-odio" class="visually-hidden" value="Odio">
+                <label for="watch-mechanism-odio" class="label-custom-checkbox">Odio</label>
+                <input type="checkbox" name="watch-mechanism" id="watch-mechanism-mattis" class="visually-hidden" value="Mattis">
+                <label for="watch-mechanism-mattis" class="label-custom-checkbox">Mattis</label>
+              </div>
+            </fieldset>
+            <fieldset class="filters-form__inputs">
+              <div class="filters-form__legend-wrap">
+                <legend>
+                  <button class="filters-form__button">Материал</button>
+                </legend>
+              </div>
+              <div class="filters-form__column">
+                <input type="checkbox" name="watch-material" id="watch-material-steel" class="visually-hidden" value="Сталь">
+                <label for="watch-material-steel" class="label-custom-checkbox">Сталь</label>
+                <input type="checkbox" name="watch-material" id="watch-material-plastic" class="visually-hidden" value="Пластик">
+                <label for="watch-material-plastic" class="label-custom-checkbox">Пластик</label>
+                <input type="checkbox" name="watch-material" id="watch-material-gold" class="visually-hidden" value="Золото">
+                <label for="watch-material-gold" class="label-custom-checkbox">Золото</label>
+                <input type="checkbox" name="watch-material" id="watch-material-carbon" class="visually-hidden" value="Карбон">
+                <label for="watch-material-carbon" class="label-custom-checkbox">Карбон</label>
+                <input type="checkbox" name="watch-material" id="watch-material-titanium" class="visually-hidden" value="Титан">
+                <label for="watch-material-titanium" class="label-custom-checkbox">Титан</label>
+              </div>
+            </fieldset>
+            <fieldset class="filters-form__inputs">
+              <div class="filters-form__legend-wrap">
+                <legend>
+                  <button class="filters-form__button">Цвет</button>
+                </legend>
+              </div>
+              <div class="filters-form__column">
+                <input type="checkbox" name="watch-color" id="watch-color-white" class="visually-hidden" value="Белый">
+                <label for="watch-color-white" class="label-custom-checkbox">Белый</label>
+                <input type="checkbox" name="watch-color" id="watch-color-black" class="visually-hidden" value="Черный">
+                <label for="watch-color-black" class="label-custom-checkbox">Черный</label>
+                <input type="checkbox" name="watch-color" id="watch-color-blue" class="visually-hidden" value="Синий">
+                <label for="watch-color-blue" class="label-custom-checkbox">Синий</label>
+                <input type="checkbox" name="watch-color" id="watch-color-green" class="visually-hidden" value="Зеленый">
+                <label for="watch-color-green" class="label-custom-checkbox">Зеленый</label>
+                <input type="checkbox" name="watch-color" id="watch-color-red" class="visually-hidden" value="Красный">
+                <label for="watch-color-red" class="label-custom-checkbox">Красный</label>
+              </div>
+            </fieldset>
+            <button class="button filters-form__btn-reset" type="reset">сбросить фильтр</button>
+          </form>
+        </section>
+        <section class="card-list-container">
+          <h2 class="visually-hidden">Каталог мужских часов.</h2>
+          <ul class="card-list">
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_1.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_2.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_3.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_4.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_5.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item promo-card">
+                <p class="promo-card__description">
+                  <span class="promo-card__discount">-20%</span><br>
+                  на вторую позицию в чеке
+                </p>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_6.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_7.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_8.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_9.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_10.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-item">
+                <div class="card-item__header">
+                  <div class="card-item__info">
+                    <h3 class="card-item__title" id="title_1">Techne</h3>
+                    <p class="card-item__price">12 700 &#8381;</p>
+                  </div>
+                  <div class="card-item__buttons">
+                    <button class="card-item__btn card-item__btn--favourite">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#favorites-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в избранное.</span>
+                    </button>
+                    <button class="card-item__btn card-item__btn--cart">
+                      <svg width="20" height="18">
+                        <use xlink:href="img/sprite-icons.svg#cart-ic"></use>
+                      </svg>
+                      <span class="visually-hidden">Добавить в корзину.</span>
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="card-item__link">
+                  <img src="img/catalog/catalog-watch_11.png" class="card-item__img" width="212" height="223" aria-labelledby="title_1" alt="">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+    <ul class="pagination-list">
+      <li class="pagination-list__item">
+        <a href="#" class="pagination-list__link pagination-list__link-prev"><img src="img/catalog/arrow-left-ic.svg" width="6" height="10" alt=""></a>
+      </li>
+      <li class="pagination-list__item">
+        <a href="#" class="pagination-list__link">1</a>
+      </li>
+      <li class="pagination-list__item">
+        <a href="#" class="pagination-list__link">2</a>
+      </li>
+      <li class="pagination-list__item">
+        <a href="#" class="pagination-list__link pagination-list__link-current">3</a>
+      </li>
+      <li class="pagination-list__item">
+        <a class="pagination-list__link">...</a>
+      </li>
+      <li class="pagination-list__item">
+        <a href="#" class="pagination-list__link">12</a>
+      </li>
+      <li class="pagination-list__item">
+        <a href="#" class="pagination-list__link pagination-list__link-next"><img src="img/catalog/arrow-right-ic.svg" width="6" height="10" alt=""></a>
+      </li>
+    </ul>
+  </div>
+  </main>
+  <footer class="footer">
+    <div class="small-container">
+      <dl class="footer-navigation">
+        <div class="footer__column">
+          <dt class="footer__contacts visually-hidden">Контакты</dt>
+          <dd>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <a class="footer__logo">
+                  <img src="img/footer_logo.svg" width="127" height="30"
+                  alt="Логотип магазина швейцарских часов Conquest">
+                </a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="tel:84994504797" class="footer__phone footer__link">8(499)450-47-97</a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="mailto:info@conquest.watch.ru" class="footer__email footer__link">info@conquest.watch.ru</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+        <div class="footer__column">
+          <dt class="footer__column-title">о компании</dt>
+          <dd>
+            <ul class="footer__column-list">
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Наши магазины</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Вакансии</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Сертификаты</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Отзывы</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+        <div class="footer__column">
+          <dt class="footer__column-title">покупателям</dt>
+          <dd>
+            <ul class="footer__column-list">
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Каталог товаров</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Как заказать?</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">FAQ</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Корпоративным клиентам</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+        <div class="footer__column">
+          <dt class="footer__column-title">оплата и доставка</dt>
+          <dd>
+            <ul class="footer__column-list">
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Способы оплаты</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Время доставки</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Гарантии и ремонт</a>
+              </li>
+              <li class="footer__column-list-item">
+                <a href="#" class="footer__column-link footer__link">Возврат и компенсация</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </footer>
+
+  <script src="js/svg4everybody.min.js" defer></script>
+  <script src="js/swiper.min.js" defer></script>
+  <script src="js/wNumb.min.js" defer></script>
+  <script src="js/nouislider.min.js" defer></script>
+  <script src="js/script.min.js" defer></script>
+</body>
+</html>

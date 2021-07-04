@@ -115,6 +115,10 @@
   &:focus {
     color: $donkey-brown;
   }
+
+  &--active {
+    color: $donkey-brown;
+  }
 }
 
 .header-search-button {

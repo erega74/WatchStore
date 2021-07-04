@@ -1,6 +1,15 @@
+// main page
 @import "main/decor";
 @import "main/main";
 @import "main/promo";
 @import "main/bestsellers";
 @import "main/banner";
 @import "main/socials";
+
+// catalog page
+@import "catalog/header";
+@import "catalog/catalog-header";
+@import "catalog/catalog-content";
+@import "catalog/catalog-select";
+@import "catalog/catalog-filters";
+@import "catalog/card-list";

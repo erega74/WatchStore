@@ -1,0 +1,47 @@
+.catalog__sort {
+  @include robotoReg;
+
+  margin-left: auto;
+  font-size: 14px;
+  color: $cotton-seed;
+}
+
+.catalog__select-wrap {
+  position: relative;
+  margin: 0;
+}
+
+.catalog__select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  display: block;
+  width: 11px;
+  height: 7px;
+  background-image: url("../img/select-arrow-down-ic.svg");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.catalog__select {
+  @include robotoReg;
+
+  appearance: none;
+  display: block;
+  border: 0;
+  padding: 1px 20px 1px 1px;
+  max-width: 120px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  color: $rangoon-green;
+
+  // width: 100%;
+  background: none;
+  cursor: pointer;
+}
+
+.catalog__select::-ms-expand {
+  display: none;
+}

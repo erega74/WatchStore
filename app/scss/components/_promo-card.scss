@@ -1,0 +1,27 @@
+.promo-card {
+  position: relative;
+  height: 300px;
+  max-width: 252px;
+  background-image: url("../img/catalog/promo-card-bg.png");
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: $cameo;
+
+  &__description {
+    @include playfairBold;
+
+    margin: auto 110px auto 35px;
+    width: 130px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__discount {
+    display: block;
+    font-size: 45px;
+  }
+}

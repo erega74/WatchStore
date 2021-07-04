@@ -1,0 +1,121 @@
+.catalog__filters {
+  margin-right: 96px;
+  width: 260px;
+}
+
+.filters-form__inputs {
+  margin: 0;
+  margin-bottom: 5px;
+  border: none;
+  padding: 0;
+}
+
+.filters-form__inputs legend {
+  display: block;
+}
+
+.filters-form__button {
+  @include robotoMedium;
+
+  position: relative;
+  border: none;
+  padding-right: 40px;
+  padding-left: 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  color: $masala;
+  background: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    width: 11px;
+    height: 1px;
+    background-color: $rangoon-green;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    width: 11px;
+    height: 1px;
+    background-color: $rangoon-green;
+    transform: rotate(-90deg);
+  }
+}
+
+.filters-form__button--active::after {
+  display: none;
+}
+
+.filters-form__column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.filters-form__column--open {
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in;
+}
+
+.price-slider__wrap {
+  margin-top: 12px;
+  min-height: 50px;
+}
+
+.noUi-target {
+  border: none;
+}
+
+.noUi-horizontal {
+  height: 1px;
+}
+
+.noUi-connects {
+  background-color: $alto;
+}
+
+.noUi-connect {
+  background-color: $rangoon-green;
+}
+
+.noUi-handle {
+  border: 1px solid $rangoon-green;
+  border-radius: 100%;
+  box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  right: 0;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  @include robotoReg;
+
+  bottom: -30px;
+  border: 0;
+  padding: 6px 0;
+  font-size: 12px;
+  color: rgba($rangoon-green, 0.82);
+}

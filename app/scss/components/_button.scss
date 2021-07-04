@@ -8,9 +8,39 @@
   text-transform: uppercase;
   color: #fff;
   background-color: $masala;
-  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
 
   &:hover {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// кнопки карточки каталога
+
+.card-item__btn {
+  border: none;
+  padding: 1px;
+  background: none;
+  cursor: pointer;
+
+  &--favourite {
+    margin-right: 14px;
+  }
+}
+
+.filters-form__btn-reset {
+  @include robotoMedium;
+
+  border: 2px solid $white-rock;
+  padding: 22px 45px;
+  width: 100%;
+  color: $cod-gray;
+  background: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    box-shadow: none;
+    background-color: $white-rock;
   }
 }
